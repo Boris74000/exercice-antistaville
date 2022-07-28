@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.accordion {
+    @apply text-lg font-semibold border-b-2 border-slate-200 py-2;
+}
+
+.burger-icon {
+    @apply bg-gray-600 h-0.5 w-6 my-1;
+}
+
+.footer-navigation-li {
+    @apply font-bold text-xl mb-2;
+}
+
+.footer-useful-links-li {
+    @apply font-normal text-base mb-2;
+}
+
+.footer-h4 {
+    @apply font-semibold text-sm mb-4;
+}
+
+.footer-btn-contact {
+    @apply bg-white rounded-lg text-base font-bold p-2;
+}

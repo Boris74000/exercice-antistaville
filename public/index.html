@@ -8,9 +8,201 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <header>
-        <img src="img/antistaville.png" alt="Logo de Antistaville"/>
-        <nav></nav>
-    </header>
+    <main>
+        <header class="flex justify-between items-center py-6 border-b-2 border-slate-200 mx-4">
+            <img src="img/antistaville.png" alt="Logo de Antistaville"/>
+            <nav class="hidden">
+                <ul>
+                    <li>
+                        <a href="#">Administration et autorités</a>
+                    </li>
+                    <li>
+                        <a href="#">Vie pratique</a>
+                    </li>
+                    <li>
+                        <a href="#">Culture, sport et loisirs</a>
+                    </li>
+                    <li>
+                        <a href="#">Agenda</a>
+                    </li>
+                    <li>
+                        <a href="#">Actualités</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex items-center">
+                <img class="mr-4" src="img/magnifier-icon.png" alt="Icone d'une loupe">
+                <div>
+                    <div class="burger-icon"></div>
+                    <div class="burger-icon"></div>
+                    <div class="burger-icon"></div>
+                </div>
+
+                <button class="hidden">Guichet</button>
+            </div>
+        </header>
+
+        <section class="mx-4 mb-12">
+            <div class="breadcrumb my-4 font-semibold font-normal text-base text-gray-900">
+                <span>< Actualités</span>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-antistaville-green text-xl font-semibold">Activité extérieure</h3>
+                <h1 class="font-bold text-3xl mb-6">L’Antistabus : une ludothèque sur roues</h1>
+                <p class="text-xl">Le service de la cohésion sociale propose aux habitantes et habitants d’Antistaville des animations itinérantes et
+                    gratuites durant toutes les vacances scolaires d’été.</p>
+                <p class="font-normal text-base text-gray-700 mt-4">Publié le 6 avril 2022 · Mis à jour le 8 avril 2022</p>
+            </div>
+
+            <div>
+                <img src="img/animation-antistaville.jpg" alt="Rassemblement organisé par Antistabus"/>
+                <p class="text-sm font-normal mt-2 mb-8">Description optionnelle de l’image.</p>
+            </div>
+
+            <div class="mb-6">
+                <h2 class="text-2xl	font-bold mb-4">Nombreux jeux adaptés au plein air</h2>
+                <p class="text-xl">L’Antistabus, un véhicule transportant de <a href="#" class="text-antistaville-green border-b-2 border-antistaville-green">nombreux jeux</a> adaptés aux activités de plein air, sillonnera la ville
+                    d’Antistaville pendant les mois de juillet et d’août afin de proposer des moments ludiques pour les petits et les grands.
+                    Des <a href="#" class="text-antistaville-green border-b-2 border-antistaville-green">chaises longues</a> et diverses animations garantiront une ambiance conviviale.</p>
+            </div>
+
+            <div class="mb-6">
+                <h2 class="text-xl font-bold mb-4">Une équipe accueillante et attentive</h2>
+                <p class="text-xl">Composée d’animatrices et de jeunes d’Antistaville, une équipe accueillante et attentive aux besoins de chacune et chacun vous
+                    fera découvrir le monde du jeu. Destinés à tous les publics et à tous les goûts, vous pourrez vous amuser avec des jeux de plateau,
+                    en bois ou même sportifs !</p>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-4">FAQ</h2>
+                <p class="accordion border-t-2">Faut-il venir habillé en magenta ?</p>
+                <p class="accordion">Est-ce que les chiens sont admis ?</p>
+                <p class="accordion">Les jeux sont-ils adaptés à tous les enfants ?</p>
+                <p class="accordion">Est-ce qu’il y aura des glaces ?</p>
+            </div>
+
+            <div>
+                <p class="hidden">L’Amusebus s’arrêtera chaque semaine dans un quartier différent de la commune pour investir les parcs et les préaux
+                    d’école du lundi au vendredi de 15h à 19h.</p>
+            </div>
+
+        </section>
+
+        <footer class="bg-antistaville-gray-50 pt-8 px-4 pb-6">
+            <!--Footer top-->
+            <div class="border-b-2 border-slate-200">
+                <div>
+                    <h4 class="footer-h4">Navigation</h4>
+                    <ul>
+                        <li>
+                            <a href="#" class="footer-navigation-li">Administration et autorités</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-navigation-li">Vie pratique</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-navigation-li">Culture, sport et loisirs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-navigation-li">Agenda</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-navigation-li">Actualités</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-navigation-li">Guichet</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-h4">Liens utiles</h4>
+                    <li>
+                        <a href="#" class="footer-useful-links-li">Économie locale</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-useful-links-li">Location de salles</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-useful-links-li">Offres d'emploi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-useful-links-li">Organiser une manifestation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-useful-links-li">Conseil Communal</a>
+                    </li>
+                </div>
+
+                <div class="bg-white rounded-lg	p-4">
+                    <h4 class="font-bold text-2xl mb-4">Newsletter</h4>
+                    <p>Inscrivez-vous pour rester au courant de la vie d’Antistaville.</p>
+                    <input class="bg-antistaville-gray-50 rounded-lg" type="email" name="email" id="email" placeholder="Entrez votre email">
+                    <button class="bg-antistaville-green-anise-500 rounded-lg mt-2" type="submit">Je m’inscris</button>
+                </div>
+
+            </div>
+
+            <!--Footer bottom-->
+            <div class="pt-8">
+                <div>
+                    <h4 class="footer-h4">Adresse</h4>
+                    <p>Mairie d’Antistaville<br>
+                        Rue de l’Amour-du-Web<br>
+                        Case postale 42<br>
+                        1000 Antistaville</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-h4">Contact</h4>
+                    <button><a href="tel:221234567">022 123 45 67</a></button>
+                    <button><a href="mailto:mairie@antistaville.ch">mairie@antistaville.ch</a></button>
+                </div>
+
+                <div>
+                    <h4 class="footer-h4">Horaires du guichet</h4>
+                    <div>
+                        <div>
+                            <div>
+                                <span>Lundi</span>
+                                <span>Mardi</span>
+                                <span>Mercredi</span>
+                                <span>Jeudi</span>
+                                <span>Vendredi</span>
+                            </div>
+                            <div>
+                                <span>09:00-14:00</span>
+                                <span>09:00-14:00</span>
+                                <span>09:00-17:00</span>
+                                <span>09:00-14:00</span>
+                                <span>09:00-14:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <h4 class="footer-h4">Réseaux sociaux</h4>
+                </div>
+
+            </div>
+
+            <!--Legal notice-->
+            <div>
+                <div>
+                    <p>Copyright © 2022 Antistaville</p>
+                    <p>Protections des données</p>
+                    <p>Plan du site</p>
+                    <p>Lexique</p>
+                </div>
+                <div>
+                    <p>Réalisé par Antistatique</p>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>

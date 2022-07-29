@@ -3,15 +3,61 @@
 @tailwind utilities;
 
 @layer components {
+    h1, h2, h3, h4, .navigation li {
+        font-family: 'Lexend', sans-serif;
+    }
+
+    p, .useful-links li, button {
+        font-family: 'Inter', sans-serif;
+    }
+
+    p, .label {
+        @apply text-17px lg:text-lg;
+    }
+
+    .label p {
+        @apply mr-8;
+    }
+
+    .content p {
+        @apply font-normal;
+    }
+
+    .breadcrumb a, header li {
+        @apply hover:border-b-2 border-antistaville-gray-900;
+    }
+
+    .smallest-text {
+        @apply text-base font-normal;
+    }
+
+    .btn-antistaville-green-anise-500 {
+        @apply bg-antistaville-green-anise-500 rounded-lg px-3.5 py-2 font-bold text-base hover:opacity-80;
+    }
+
+    .input {
+        @apply bg-antistaville-gray-50 rounded-lg p-2;
+    }
+
+    /* ------------ Header -------------------*/
+    header li {
+        @apply xl:text-lg xl:mx-6;
+    }
+
+    header li.active {
+        @apply border-b-2 border-antistaville-gray-900;
+    }
+    /*--------------------------------------*/
+
+
+
     /* ------------ Accordion ---------------*/
     .accordion {
-        @apply text-lg font-semibold border-b-2 border-antistaville-gray-200 py-2;
+        @apply text-lg font-semibold border-b-2 border-antistaville-gray-200 py-2 cursor-pointer;
     }
 
     .content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
+        @apply max-h-0 overflow-hidden transition-all;
     }
 
     .append-arrow-accordion {
@@ -20,14 +66,43 @@
     }
 
     .item-accordion-active.append-arrow-accordion::after {
-        transform: rotate(180deg);
+        @apply rotate-180;
     }
-    /*------------------------------------*/
+    /*------------------------------------------*/
 
+
+    /* ------------ Menu mobile ---------------*/
     .burger-icon-style {
         @apply bg-antistaville-gray-900 h-0.5 w-6 my-1;
     }
 
+    .style-menu-mobile {
+        @apply max-lg:fixed max-lg:left-0 max-lg:-top-20 max-lg:w-full max-lg:z-10 max-lg:bg-antistaville-gray-50
+        max-lg:pb-4 max-lg:transition-transform max-lg:duration-700 max-lg:-translate-y-230px;
+    }
+
+    .hidden-menu-mobile {
+        @apply max-lg:-translate-y-230px;
+    }
+
+    .display-menu-mobile {
+        @apply max-lg:translate-y-70px;
+    }
+    /*------------------------------------*/
+
+
+    /* ------------ Search bar ---------------*/
+    .hidden-search-block {
+        @apply top-20 -right-72 lg:top-24;
+    }
+
+    .display-search-block {
+        @apply top-20 right-5 lg:top-24;
+    }
+    /*------------------------------------*/
+
+
+    /* ------------ Footer ---------------*/
     .footer-navigation-li {
         @apply font-bold text-xl mb-2;
     }
@@ -41,36 +116,19 @@
     }
 
     .footer-btn-contact {
-        @apply bg-white rounded-lg text-base font-bold p-2 border-b-2 border-antistaville-gray-200;
+        @apply bg-white rounded-lg text-base font-bold p-2 border-b-2 border-antistaville-gray-200 hover:border-antistaville-green-anise-500;
     }
 
-    .smallest-text {
-        @apply text-base font-normal;
+    .social-network a {
+        @apply hover:translate-y-1;
     }
 
-    .btn-antistaville-green-anise-500 {
-        @apply bg-antistaville-green-anise-500 rounded-lg mt-2 p-2 font-bold text-base;
+    .navigation li, .useful-links li {
+        @apply my-2 transition-transform hover:translate-x-2;
     }
 
-    .input {
-        @apply bg-antistaville-gray-50 rounded-lg p-2;
+    .legal-notice a {
+        @apply hover:border-antistaville-green-anise-500
     }
-
-    .hidden-menu-mobile {
-        transform: translateY(-230px);
-    }
-
-    .display-menu-mobile {
-        transform: translateY(70px);
-    }
-
-    .hidden-search-block {
-        transform: translate(100px, 62px);
-    }
-
-    .display-search-block {
-        transform: translate(-187px, 62px);
-    }
+    /*------------------------------------*/
 }
-
-

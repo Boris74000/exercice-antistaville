@@ -1,15 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html"],
+  content: [
+      './public/**/*.html',
+      './src/js/main.js'
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
     screens: {
       sm: '640px',
+      'max-sm': {'max': '639px'},
       md: '768px',
       lg: '1024px',
+      'max-lg': {'max': '1023px'},
       xl: '1280px',
       '2xl': '1536px',
+    },
+    extend: {
+        translate: {
+            '70px': '70px',
+            '230px': '230px',
+        }
     },
     colors: ({ colors }) => ({
       'antistaville-green-mint-500': '#3F9544',
@@ -383,6 +394,9 @@ module.exports = {
       ],
     },
     fontSize: {
+      '17px': '1.063rem',
+      '21px': '1.313rem',
+      '23px': '1.438rem',
       xs: ['0.75rem', { lineHeight: '1rem' }],
       sm: ['0.875rem', { lineHeight: '1.25rem' }],
       base: ['1rem', { lineHeight: '1.5rem' }],
@@ -629,6 +643,7 @@ module.exports = {
       fit: 'fit-content',
     }),
     maxWidth: ({ theme, breakpoints }) => ({
+      '800': '800px',
       none: 'none',
       0: '0rem',
       xs: '20rem',

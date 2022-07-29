@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "postcss ./src/css/tailwind.css -o ./public/output.css --watch"
+    "watch": "postcss ./src/css/tailwind.css -o ./public/output.css --watch",
+    "prod": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/output.css --minify"
   },
   "keywords": [],
   "author": "",

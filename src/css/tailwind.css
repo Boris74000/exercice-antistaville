@@ -2,54 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-.accordion {
-    @apply text-lg font-semibold border-b-2 border-antistaville-gray-200 py-2;
+@layer components {
+    /* ------------ Accordion ---------------*/
+    .accordion {
+        @apply text-lg font-semibold border-b-2 border-antistaville-gray-200 py-2;
+    }
+
+    .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .append-arrow-accordion {
+        @apply after:content-arrow after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
+        after:h-4 after:w-4 after:transition-transform after:duration-300;
+    }
+
+    .item-accordion-active.append-arrow-accordion::after {
+        transform: rotate(180deg);
+    }
+    /*------------------------------------*/
+
+    .burger-icon-style {
+        @apply bg-antistaville-gray-900 h-0.5 w-6 my-1;
+    }
+
+    .footer-navigation-li {
+        @apply font-bold text-xl mb-2;
+    }
+
+    .footer-useful-links-li {
+        @apply font-normal text-base mb-2;
+    }
+
+    .footer-h4 {
+        @apply font-semibold text-sm mb-4 uppercase;
+    }
+
+    .footer-btn-contact {
+        @apply bg-white rounded-lg text-base font-bold p-2 border-b-2 border-antistaville-gray-200;
+    }
+
+    .smallest-text {
+        @apply text-base font-normal;
+    }
+
+    .btn-antistaville-green-anise-500 {
+        @apply bg-antistaville-green-anise-500 rounded-lg mt-2 p-2 font-bold text-base;
+    }
+
+    .input {
+        @apply bg-antistaville-gray-50 rounded-lg p-2;
+    }
+
+    .hidden-menu-mobile {
+        transform: translateY(-230px);
+    }
+
+    .display-menu-mobile {
+        transform: translateY(70px);
+    }
+
+    .hidden-search-block {
+        transform: translate(100px, 62px);
+    }
+
+    .display-search-block {
+        transform: translate(-187px, 62px);
+    }
 }
 
-.burger-icon-style {
-    @apply bg-antistaville-gray-900 h-0.5 w-6 my-1;
-}
 
-.footer-navigation-li {
-    @apply font-bold text-xl mb-2;
-}
-
-.footer-useful-links-li {
-    @apply font-normal text-base mb-2;
-}
-
-.footer-h4 {
-    @apply font-semibold text-sm mb-4 uppercase;
-}
-
-.footer-btn-contact {
-    @apply bg-white rounded-lg text-base font-bold p-2 border-b-2 border-antistaville-gray-200;
-}
-
-.smallest-text {
-    @apply text-base font-normal;
-}
-
-.btn-antistaville-green-anise-500 {
-    @apply bg-antistaville-green-anise-500 rounded-lg mt-2 p-2 font-bold text-base;
-}
-
-.input {
-    @apply bg-antistaville-gray-50 rounded-lg p-2;
-}
-
-.hidden-menu-mobile {
-    transform: translateY(-230px);
-}
-
-.display-menu-mobile {
-    transform: translateY(70px);
-}
-
-.hidden-search-block {
-    transform: translate(230px, 62px);
-}
-
-.display-search-block {
-    transform: translate(-187px, 62px);
-}

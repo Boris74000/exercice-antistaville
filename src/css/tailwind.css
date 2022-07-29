@@ -23,7 +23,7 @@
         @apply font-normal;
     }
 
-    .breadcrumb a, header li {
+    .breadcrumb a {
         @apply hover:border-b-2 border-antistaville-gray-900;
     }
 
@@ -41,7 +41,7 @@
 
     /* ------------ Header -------------------*/
     header li {
-        @apply xl:text-lg xl:mx-6;
+        @apply border-b-2 border-transparent hover:border-antistaville-gray-900 mx-2 xl:text-lg xl:mx-6 max-lg:my-2;
     }
 
     header li.active {

@@ -9,10 +9,10 @@
 </head>
 <body>
     <main>
-        <header class="flex justify-between items-center py-6 border-b-2 border-antistaville-gray-200 mx-4">
+        <header class="relative flex justify-between items-center py-6 border-b-2 border-antistaville-gray-200 mx-4">
             <img src="img/antistaville.png" alt="Logo de Antistaville"/>
-            <nav id="main-menu" class="fixed left-0	w-full z-10 bg-antistaville-gray-50 pb-4 hidden-menu-mobile ease-in-out duration-300">
-                <img id="close-menu-mobile" class="w-5 h-5 ml-auto mt-2.5 mr-2.5 mb-2.5" src="img/xmark-solid.svg">
+            <nav id="main-menu" class="fixed left-0 top-0 w-full z-10 bg-antistaville-gray-50 pb-4 hidden-menu-mobile transition-transform duration-400">
+                <img id="close-menu-mobile" alt="icone d'une croix" class="w-5 h-5 ml-auto mt-2.5 mr-2.5 mb-2.5" src="img/xmark-solid.svg">
                 <ul class="list-none flex flex-col items-center">
                     <li>
                         <a href="#">Administration et autorités</a>
@@ -36,7 +36,7 @@
             </nav>
             <div class="flex items-center">
                 <img id="magnifier-icon" class="mr-6" src="img/magnifier-icon.png" alt="Icone d'une loupe"/>
-                <div id="search-block" class="flex items-center absolute ease-in-out duration-300 hidden-search-block">
+                <div id="search-block" class="flex items-center fixed ease-in-out duration-500 hidden-search-block">
                     <img id="close-search-block" class="w-5 h-5 mr-2" src="img/right-long-solid.svg" alt="Icone d'une flèche qui pointe vers la droite"/>
                     <input class="smallest-text input" type="text" name="search" id="search" placeholder="Rechercher"/>
                     <img class="ml-2" src="img/magnifier-icon.png" alt="Icone d'une loupe"/>
@@ -72,9 +72,9 @@
 
             <div class="mb-6">
                 <h2 class="text-2xl	font-bold mb-4">Nombreux jeux adaptés au plein air</h2>
-                <p class="text-xl">L’Antistabus, un véhicule transportant de <a href="#" class="text-antistaville-green border-b-2 border-antistaville-green">nombreux jeux</a> adaptés aux activités de plein air, sillonnera la ville
+                <p class="text-xl">L’Antistabus, un véhicule transportant de <a href="#" class="text-antistaville-green-mint-500 border-b-2 border-antistaville-green-mint-500">nombreux jeux</a> adaptés aux activités de plein air, sillonnera la ville
                     d’Antistaville pendant les mois de juillet et d’août afin de proposer des moments ludiques pour les petits et les grands.
-                    Des <a href="#" class="text-antistaville-green border-b-2 border-antistaville-green">chaises longues</a> et diverses animations garantiront une ambiance conviviale.</p>
+                    Des <a href="#" class="text-antistaville-green-mint-500 border-b-2 border-antistaville-green-mint-500">chaises longues</a> et diverses animations garantiront une ambiance conviviale.</p>
             </div>
 
             <div class="mb-6">
@@ -86,10 +86,42 @@
 
             <div>
                 <h2 class="text-xl font-bold mb-4">FAQ</h2>
-                <p class="accordion border-t-2">Faut-il venir habillé en magenta ?</p>
-                <p class="accordion">Est-ce que les chiens sont admis ?</p>
-                <p class="accordion">Les jeux sont-ils adaptés à tous les enfants ?</p>
-                <p class="accordion">Est-ce qu’il y aura des glaces ?</p>
+
+                <div class="container-accordion accordion">
+                    <div class="label append-arrow-accordion relative"><p>Faut-il venir habillé en magenta ?</p></div>
+                    <div class="content">
+                        <p class="mt-4">Venez comme vous êtes ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                            Fusce dapibus tellus ac cursus commodo tortor mauris.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-accordion accordion">
+                    <div class="label append-arrow-accordion relative"><p>Est-ce que les chiens sont admis ?</p></div>
+                    <div class="content">
+                        <p class="mt-4">Oui bien sûr ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                            Fusce dapibus tellus ac cursus commodo tortor mauris.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-accordion accordion">
+                    <div class="label append-arrow-accordion relative"><p>Les jeux sont-ils adaptés à tous les enfants ?</p></div>
+                    <div class="content">
+                        <p class="mt-4">Les jeux sont adaptés à tous les enfants. Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                            Fusce dapibus tellus ac cursus commodo tortor mauris.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-accordion accordion">
+                    <div class="label append-arrow-accordion relative"><p>Est-ce qu’il y aura des glaces ?</p></div>
+                    <div class="content">
+                        <p class="mt-4">Il y aura beaucoup de glaces, et même au Génépi ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                            Fusce dapibus tellus ac cursus commodo tortor mauris.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div>
@@ -209,16 +241,16 @@
                     <h4 class="footer-h4 mb-6">Réseaux sociaux</h4>
                     <div class="flex">
                         <a href="#">
-                            <img class="mx-3" src="img/Facebook.png" alt="Logo de Facebook">
+                            <img class="mx-3" src="img/facebook.png" alt="Logo de Facebook">
                         </a>
                         <a href="#">
-                            <img class="mx-3" src="img/Instagram.png" alt="Logo de Instagram">
+                            <img class="mx-3" src="img/instagram.png" alt="Logo de Instagram">
                         </a>
                         <a href="#">
-                            <img class="mx-3" src="img/Linkedin.png" alt="Logo de Linkedin">
+                            <img class="mx-3" src="img/linkedin.png" alt="Logo de Linkedin">
                         </a>
                         <a href="#">
-                            <img class="mx-3" src="img/Youtube.png" alt="Logo de Youtube">
+                            <img class="mx-3" src="img/youtube.png" alt="Logo de Youtube">
                         </a>
                     </div>
                 </div>

@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .accordion {
-    @apply text-lg font-semibold border-b-2 border-slate-200 py-2;
+    @apply text-lg font-semibold border-b-2 border-antistaville-gray-200 py-2;
 }
 
-.burger-icon {
-    @apply bg-gray-600 h-0.5 w-6 my-1;
+.burger-icon-style {
+    @apply bg-antistaville-gray-900 h-0.5 w-6 my-1;
 }
 
 .footer-navigation-li {
@@ -19,9 +19,37 @@
 }
 
 .footer-h4 {
-    @apply font-semibold text-sm mb-4;
+    @apply font-semibold text-sm mb-4 uppercase;
 }
 
 .footer-btn-contact {
-    @apply bg-white rounded-lg text-base font-bold p-2;
+    @apply bg-white rounded-lg text-base font-bold p-2 border-b-2 border-antistaville-gray-200;
+}
+
+.smallest-text {
+    @apply text-base font-normal;
+}
+
+.btn-antistaville-green-anise-500 {
+    @apply bg-antistaville-green-anise-500 rounded-lg mt-2 p-2 font-bold text-base;
+}
+
+.input {
+    @apply bg-antistaville-gray-50 rounded-lg p-2;
+}
+
+.hidden-menu-mobile {
+    transform: translateY(-230px);
+}
+
+.display-menu-mobile {
+    transform: translateY(70px);
+}
+
+.hidden-search-block {
+    transform: translate(230px, 62px);
+}
+
+.display-search-block {
+    transform: translate(-187px, 62px);
 }

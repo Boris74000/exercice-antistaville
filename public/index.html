@@ -9,10 +9,11 @@
 </head>
 <body>
     <main>
-        <header class="flex justify-between items-center py-6 border-b-2 border-slate-200 mx-4">
+        <header class="flex justify-between items-center py-6 border-b-2 border-antistaville-gray-200 mx-4">
             <img src="img/antistaville.png" alt="Logo de Antistaville"/>
-            <nav class="hidden">
-                <ul>
+            <nav id="main-menu" class="fixed left-0	w-full z-10 bg-antistaville-gray-50 pb-4 hidden-menu-mobile ease-in-out duration-300">
+                <img id="close-menu-mobile" class="w-5 h-5 ml-auto mt-2.5 mr-2.5 mb-2.5" src="img/xmark-solid.svg">
+                <ul class="list-none flex flex-col items-center">
                     <li>
                         <a href="#">Administration et autorités</a>
                     </li>
@@ -29,16 +30,25 @@
                         <a href="#">Actualités</a>
                     </li>
                 </ul>
+                <button class="btn-antistaville-green-anise-500 block mx-auto mt-2 ">
+                    <a href="#">Guichet</a>
+                </button>
             </nav>
             <div class="flex items-center">
-                <img class="mr-4" src="img/magnifier-icon.png" alt="Icone d'une loupe">
-                <div>
-                    <div class="burger-icon"></div>
-                    <div class="burger-icon"></div>
-                    <div class="burger-icon"></div>
+                <img id="magnifier-icon" class="mr-6" src="img/magnifier-icon.png" alt="Icone d'une loupe"/>
+                <div id="search-block" class="flex items-center absolute ease-in-out duration-300 hidden-search-block">
+                    <img id="close-search-block" class="w-5 h-5 mr-2" src="img/right-long-solid.svg" alt="Icone d'une flèche qui pointe vers la droite"/>
+                    <input class="smallest-text input" type="text" name="search" id="search" placeholder="Rechercher"/>
+                    <img class="ml-2" src="img/magnifier-icon.png" alt="Icone d'une loupe"/>
                 </div>
 
-                <button class="hidden">Guichet</button>
+                <div id="burger-icon">
+                    <div class="burger-icon-style"></div>
+                    <div class="burger-icon-style"></div>
+                    <div class="burger-icon-style"></div>
+                </div>
+
+                <button class="btn-antistaville-green-anise-500 hidden">Guichet</button>
             </div>
         </header>
 
@@ -48,16 +58,16 @@
             </div>
 
             <div class="mb-6">
-                <h3 class="text-antistaville-green text-xl font-semibold">Activité extérieure</h3>
+                <h3 class="text-antistaville-green-mint-500 text-xl font-semibold">Activité extérieure</h3>
                 <h1 class="font-bold text-3xl mb-6">L’Antistabus : une ludothèque sur roues</h1>
                 <p class="text-xl">Le service de la cohésion sociale propose aux habitantes et habitants d’Antistaville des animations itinérantes et
                     gratuites durant toutes les vacances scolaires d’été.</p>
-                <p class="font-normal text-base text-gray-700 mt-4">Publié le 6 avril 2022 · Mis à jour le 8 avril 2022</p>
+                <p class="smallest-text text-gray-700 mt-4">Publié le 6 avril 2022 · Mis à jour le 8 avril 2022</p>
             </div>
 
             <div>
                 <img src="img/animation-antistaville.jpg" alt="Rassemblement organisé par Antistabus"/>
-                <p class="text-sm font-normal mt-2 mb-8">Description optionnelle de l’image.</p>
+                <p class="smallest-text mt-2 mb-8">Description optionnelle de l’image.</p>
             </div>
 
             <div class="mb-6">
@@ -91,10 +101,10 @@
 
         <footer class="bg-antistaville-gray-50 pt-8 px-4 pb-6">
             <!--Footer top-->
-            <div class="border-b-2 border-slate-200">
-                <div>
+            <div class="border-b-2 border-antistaville-gray-300 pb-6">
+                <div class="mb-8">
                     <h4 class="footer-h4">Navigation</h4>
-                    <ul>
+                    <ul class="list-none">
                         <li>
                             <a href="#" class="footer-navigation-li">Administration et autorités</a>
                         </li>
@@ -116,37 +126,46 @@
                     </ul>
                 </div>
 
-                <div>
+                <div class="mb-8">
                     <h4 class="footer-h4">Liens utiles</h4>
-                    <li>
-                        <a href="#" class="footer-useful-links-li">Économie locale</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-useful-links-li">Location de salles</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-useful-links-li">Offres d'emploi</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-useful-links-li">Organiser une manifestation</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-useful-links-li">Conseil Communal</a>
-                    </li>
+                    <ul class="list-none">
+                        <li>
+                            <a href="#" class="footer-useful-links-li">Économie locale</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-useful-links-li">Location de salles</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-useful-links-li">Offres d'emploi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-useful-links-li">Organiser une manifestation</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-useful-links-li">Conseil Communal</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="bg-white rounded-lg	p-4">
-                    <h4 class="font-bold text-2xl mb-4">Newsletter</h4>
-                    <p>Inscrivez-vous pour rester au courant de la vie d’Antistaville.</p>
-                    <input class="bg-antistaville-gray-50 rounded-lg" type="email" name="email" id="email" placeholder="Entrez votre email">
-                    <button class="bg-antistaville-green-anise-500 rounded-lg mt-2" type="submit">Je m’inscris</button>
+                <div class="bg-white rounded-lg	p-4 h-60 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-2xl mb-2">Newsletter</h4>
+                        <p>Inscrivez-vous pour rester au courant de la vie d’Antistaville.</p>
+                    </div>
+                    <div>
+                        <form class="flex flex-col items-start	">
+                            <input class="input smallest-text w-full" type="email" name="email" id="email" placeholder="Entrez votre email">
+                            <button class="bg-antistaville-green-anise-500 rounded-lg mt-2 p-2 font-bold text-base" type="submit">Je m’inscris</button>
+                        </form>
+
+                    </div>
                 </div>
 
             </div>
 
             <!--Footer bottom-->
-            <div class="pt-8">
-                <div>
+            <div class="py-8 border-b-2 border-antistaville-gray-300">
+                <div class="mb-8">
                     <h4 class="footer-h4">Adresse</h4>
                     <p>Mairie d’Antistaville<br>
                         Rue de l’Amour-du-Web<br>
@@ -154,24 +173,26 @@
                         1000 Antistaville</p>
                 </div>
 
-                <div>
+                <div class="mb-8">
                     <h4 class="footer-h4">Contact</h4>
-                    <button><a href="tel:221234567">022 123 45 67</a></button>
-                    <button><a href="mailto:mairie@antistaville.ch">mairie@antistaville.ch</a></button>
+                    <div class="flex flex-col items-start">
+                        <button class="footer-btn-contact mb-2"><a href="tel:221234567">022 123 45 67</a></button>
+                        <button class="footer-btn-contact"><a href="mailto:mairie@antistaville.ch">mairie@antistaville.ch</a></button>
+                    </div>
                 </div>
 
-                <div>
+                <div class="mb-8">
                     <h4 class="footer-h4">Horaires du guichet</h4>
                     <div>
-                        <div>
-                            <div>
+                        <div class="flex">
+                            <div class="flex flex-col w-36">
                                 <span>Lundi</span>
                                 <span>Mardi</span>
                                 <span>Mercredi</span>
                                 <span>Jeudi</span>
                                 <span>Vendredi</span>
                             </div>
-                            <div>
+                            <div class="flex flex-col">
                                 <span>09:00-14:00</span>
                                 <span>09:00-14:00</span>
                                 <span>09:00-17:00</span>
@@ -185,24 +206,46 @@
                 </div>
 
                 <div>
-                    <h4 class="footer-h4">Réseaux sociaux</h4>
+                    <h4 class="footer-h4 mb-6">Réseaux sociaux</h4>
+                    <div class="flex">
+                        <a href="#">
+                            <img class="mx-3" src="img/Facebook.png" alt="Logo de Facebook">
+                        </a>
+                        <a href="#">
+                            <img class="mx-3" src="img/Instagram.png" alt="Logo de Instagram">
+                        </a>
+                        <a href="#">
+                            <img class="mx-3" src="img/Linkedin.png" alt="Logo de Linkedin">
+                        </a>
+                        <a href="#">
+                            <img class="mx-3" src="img/Youtube.png" alt="Logo de Youtube">
+                        </a>
+                    </div>
                 </div>
 
             </div>
 
             <!--Legal notice-->
-            <div>
-                <div>
-                    <p>Copyright © 2022 Antistaville</p>
-                    <p>Protections des données</p>
-                    <p>Plan du site</p>
-                    <p>Lexique</p>
+            <div class="flex flex-wrap py-6">
+                <div class="flex flex-wrap mb-2">
+                    <p class="smallest-text mb-2">Copyright © 2022 Antistaville</p>
+                    <p class="smallest-text border-b-2 border-antistaville-gray-300 mr-4">
+                        <a href="#">Protections des données</a>
+                    </p>
+                    <p class="smallest-text border-b-2 border-antistaville-gray-300 mr-4">
+                        <a href="#">Plan du site</a>
+                    </p>
+                    <p class="smallest-text border-b-2 border-antistaville-gray-300 mr-4">
+                        <a href="#">Lexique</a>
+                    </p>
                 </div>
                 <div>
-                    <p>Réalisé par Antistatique</p>
+                    <p class="smallest-text">Réalisé par <a class="border-b-2 border-antistaville-gray-300" href="https://antistatique.net/">Antistatique</a></p>
                 </div>
             </div>
         </footer>
     </main>
+
+<script src="./../src/js/main.js"></script>
 </body>
 </html>

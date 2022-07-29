@@ -4,137 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Antistaville - Actualité</title>
+    <meta name="description" content="L'Antistabus renforce la cohésion sociale">
+    <title>L’Antistabus : une ludothèque sur roues</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
     <main>
-        <header class="relative flex justify-between items-center py-6 border-b-2 border-antistaville-gray-200 mx-4">
+        <header class="relative flex justify-between items-center py-6 border-b-2 border-antistaville-gray-200 mx-4 sm:container sm:mx-auto">
             <img src="img/antistaville.png" alt="Logo de Antistaville"/>
-            <nav id="main-menu" class="fixed left-0 top-0 w-full z-10 bg-antistaville-gray-50 pb-4 hidden-menu-mobile transition-transform duration-400">
-                <img id="close-menu-mobile" alt="icone d'une croix" class="w-5 h-5 ml-auto mt-2.5 mr-2.5 mb-2.5" src="img/xmark-solid.svg">
-                <ul class="list-none flex flex-col items-center">
+
+            <nav id="main-menu" class="hidden-menu-mobile style-menu-mobile">
+                <img id="close-menu-mobile" alt="icone d'une croix" class="w-5 h-5 ml-auto mt-4 mr-2.5 -mb-2.5 cursor-pointer lg:hidden" src="img/xmark-solid.svg">
+                <ul class="list-none flex flex-col items-center lg:flex-row">
                     <li>
-                        <a href="#">Administration et autorités</a>
+                        <a href="#">Administration et autor</a>
                     </li>
-                    <li>
-                        <a href="#">Vie pratique</a>
+                    <li class="lg:mx-1.5">
+                        <a href="#">Vie pratiquefef</a>
                     </li>
-                    <li>
+                    <li class="lg:mx-1.5">
                         <a href="#">Culture, sport et loisirs</a>
                     </li>
-                    <li>
+                    <li class="lg:mx-1.5">
                         <a href="#">Agenda</a>
                     </li>
-                    <li>
+                    <li class="active lg:mx-1.5">
                         <a href="#">Actualités</a>
                     </li>
                 </ul>
-                <button class="btn-antistaville-green-anise-500 block mx-auto mt-2 ">
+                <button class="btn-antistaville-green-anise-500 block mx-auto mt-2 lg:hidden">
                     <a href="#">Guichet</a>
                 </button>
             </nav>
+
             <div class="flex items-center">
-                <img id="magnifier-icon" class="mr-6" src="img/magnifier-icon.png" alt="Icone d'une loupe"/>
-                <div id="search-block" class="flex items-center fixed ease-in-out duration-500 hidden-search-block">
-                    <img id="close-search-block" class="w-5 h-5 mr-2" src="img/right-long-solid.svg" alt="Icone d'une flèche qui pointe vers la droite"/>
-                    <input class="smallest-text input" type="text" name="search" id="search" placeholder="Rechercher"/>
-                    <img class="ml-2" src="img/magnifier-icon.png" alt="Icone d'une loupe"/>
+                <img id="magnifier-icon" class="mr-6 cursor-pointer" src="img/magnifier-icon.png" alt="Icone d'une loupe"/>
+                <div id="search-block" class="btn-antistaville-green-anise-500 p-2 flex items-center fixed ease-in-out duration-500 hidden-search-block">
+                    <img id="close-search-block" class="w-5 h-5 mr-2 cursor-pointer" src="img/right-long-solid.svg" alt="Icone d'une flèche qui pointe vers la droite"/>
+                    <form>
+                        <input class="smallest-text input" type="text" name="search" id="search" placeholder="Rechercher"/>
+                        <button type="submit"><img class="ml-2 cursor-pointer" src="img/magnifier-icon.png" alt="Icone d'une loupe"/></button>
+                    </form>
+
                 </div>
 
-                <div id="burger-icon">
+                <div id="burger-icon" class="lg:hidden">
                     <div class="burger-icon-style"></div>
                     <div class="burger-icon-style"></div>
                     <div class="burger-icon-style"></div>
                 </div>
 
-                <button class="btn-antistaville-green-anise-500 hidden">Guichet</button>
+                <button class="btn-antistaville-green-anise-500 hidden lg:block">Guichet</button>
             </div>
         </header>
 
-        <section class="mx-4 mb-12">
+        <section class="mb-12 mx-4 sm:container sm:mx-auto">
             <div class="breadcrumb my-4 font-semibold font-normal text-base text-gray-900">
-                <span>< Actualités</span>
-            </div>
-
-            <div class="mb-6">
-                <h3 class="text-antistaville-green-mint-500 text-xl font-semibold">Activité extérieure</h3>
-                <h1 class="font-bold text-3xl mb-6">L’Antistabus : une ludothèque sur roues</h1>
-                <p class="text-xl">Le service de la cohésion sociale propose aux habitantes et habitants d’Antistaville des animations itinérantes et
-                    gratuites durant toutes les vacances scolaires d’été.</p>
-                <p class="smallest-text text-gray-700 mt-4">Publié le 6 avril 2022 · Mis à jour le 8 avril 2022</p>
-            </div>
-
-            <div>
-                <img src="img/animation-antistaville.jpg" alt="Rassemblement organisé par Antistabus"/>
-                <p class="smallest-text mt-2 mb-8">Description optionnelle de l’image.</p>
-            </div>
-
-            <div class="mb-6">
-                <h2 class="text-2xl	font-bold mb-4">Nombreux jeux adaptés au plein air</h2>
-                <p class="text-xl">L’Antistabus, un véhicule transportant de <a href="#" class="text-antistaville-green-mint-500 border-b-2 border-antistaville-green-mint-500">nombreux jeux</a> adaptés aux activités de plein air, sillonnera la ville
-                    d’Antistaville pendant les mois de juillet et d’août afin de proposer des moments ludiques pour les petits et les grands.
-                    Des <a href="#" class="text-antistaville-green-mint-500 border-b-2 border-antistaville-green-mint-500">chaises longues</a> et diverses animations garantiront une ambiance conviviale.</p>
-            </div>
-
-            <div class="mb-6">
-                <h2 class="text-xl font-bold mb-4">Une équipe accueillante et attentive</h2>
-                <p class="text-xl">Composée d’animatrices et de jeunes d’Antistaville, une équipe accueillante et attentive aux besoins de chacune et chacun vous
-                    fera découvrir le monde du jeu. Destinés à tous les publics et à tous les goûts, vous pourrez vous amuser avec des jeux de plateau,
-                    en bois ou même sportifs !</p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-bold mb-4">FAQ</h2>
-
-                <div class="container-accordion accordion">
-                    <div class="label append-arrow-accordion relative"><p>Faut-il venir habillé en magenta ?</p></div>
-                    <div class="content">
-                        <p class="mt-4">Venez comme vous êtes ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
-                            Fusce dapibus tellus ac cursus commodo tortor mauris.
-                        </p>
-                    </div>
+                <div class="sm:hidden">
+                    <span>
+                        <a href="#">< Actualité</a>
+                    </span>
                 </div>
-
-                <div class="container-accordion accordion">
-                    <div class="label append-arrow-accordion relative"><p>Est-ce que les chiens sont admis ?</p></div>
-                    <div class="content">
-                        <p class="mt-4">Oui bien sûr ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
-                            Fusce dapibus tellus ac cursus commodo tortor mauris.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="container-accordion accordion">
-                    <div class="label append-arrow-accordion relative"><p>Les jeux sont-ils adaptés à tous les enfants ?</p></div>
-                    <div class="content">
-                        <p class="mt-4">Les jeux sont adaptés à tous les enfants. Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
-                            Fusce dapibus tellus ac cursus commodo tortor mauris.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="container-accordion accordion">
-                    <div class="label append-arrow-accordion relative"><p>Est-ce qu’il y aura des glaces ?</p></div>
-                    <div class="content">
-                        <p class="mt-4">Il y aura beaucoup de glaces, et même au Génépi ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
-                            Fusce dapibus tellus ac cursus commodo tortor mauris.
-                        </p>
-                    </div>
+                <div class="hidden sm:block">
+                    <span>
+                        <a href="#">Accueil ></a>
+                    </span>
+                    <span>
+                        <a href="#">Actualités ></a>
+                    </span>
+                    <span>
+                        <a href="#">L’Antistabus : une ludothèque sur roues ></a>
+                    </span>
                 </div>
             </div>
 
-            <div>
-                <p class="hidden">L’Amusebus s’arrêtera chaque semaine dans un quartier différent de la commune pour investir les parcs et les préaux
-                    d’école du lundi au vendredi de 15h à 19h.</p>
+            <div class="lg:max-w-800 mx-auto mt-12">
+                <div class="mb-6 lg:w-9/12 mx-auto">
+                    <h3 class="text-antistaville-green-mint-500 text-xl font-semibold mb-2">Activité extérieure</h3>
+                    <h1 class="font-bold text-3xl lg:text-5xl mb-6">L’Antistabus : une ludothèque sur roues</h1>
+                    <p class="text-xl lg:23px ">Le service de la cohésion sociale propose aux habitantes et habitants d’Antistaville des animations itinérantes et
+                        gratuites durant toutes les vacances scolaires d’été.</p>
+                    <p class="smallest-text text-gray-700 mt-4">Publié le 6 avril 2022 · Mis à jour le 8 avril 2022</p>
+                </div>
+
+                <div>
+                    <img src="img/animation-antistaville.jpg" alt="Rassemblement organisé par Antistabus"/>
+                    <p class="smallest-text mt-2 mb-8">Description optionnelle de l’image.</p>
+                </div>
+
+                <div class="mb-6 lg:w-9/12 mx-auto">
+                    <h2 class="text-2xl	font-bold mb-4">Nombreux jeux adaptés au plein air</h2>
+                    <p>L’Antistabus, un véhicule transportant de <a href="#" class="text-antistaville-green-mint-500 border-b-2 border-antistaville-green-mint-500">nombreux jeux</a> adaptés aux activités de plein air, sillonnera la ville
+                        d’Antistaville pendant les mois de juillet et d’août afin de proposer des moments ludiques pour les petits et les grands.
+                        Des <a href="#" class="text-antistaville-green-mint-500 border-b-2 border-antistaville-green-mint-500">chaises longues</a> et diverses animations garantiront une ambiance conviviale.</p>
+                </div>
+
+                <div class="mb-6 lg:w-9/12 mx-auto">
+                    <h2 class="text-xl font-bold mb-4">Une équipe accueillante et attentive</h2>
+                    <p>Composée d’animatrices et de jeunes d’Antistaville, une équipe accueillante et attentive aux besoins de chacune et chacun vous
+                        fera découvrir le monde du jeu. Destinés à tous les publics et à tous les goûts, vous pourrez vous amuser avec des jeux de plateau,
+                        en bois ou même sportifs !</p>
+                </div>
+
+                <div class="lg:w-9/12 mx-auto">
+                    <h2 class="text-xl font-bold mb-4">FAQ</h2>
+
+                    <div class="container-accordion accordion">
+                        <div class="label append-arrow-accordion relative"><p>Faut-il venir habillé en magenta ?</p></div>
+                        <div class="content">
+                            <p class="mt-4">Venez comme vous êtes ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                                Fusce dapibus tellus ac cursus commodo tortor mauris.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container-accordion accordion">
+                        <div class="label append-arrow-accordion relative"><p>Est-ce que les chiens sont admis ?</p></div>
+                        <div class="content">
+                            <p class="mt-4">Oui bien sûr ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                                Fusce dapibus tellus ac cursus commodo tortor mauris.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container-accordion accordion">
+                        <div class="label append-arrow-accordion relative"><p>Les jeux sont-ils adaptés à tous les enfants ?</p></div>
+                        <div class="content">
+                            <p class="mt-4">Les jeux sont adaptés à tous les enfants. Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                                Fusce dapibus tellus ac cursus commodo tortor mauris.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container-accordion accordion">
+                        <div class="label append-arrow-accordion relative"><p>Est-ce qu’il y aura des glaces ?</p></div>
+                        <div class="content">
+                            <p class="mt-4">Il y aura beaucoup de glaces, et même au Génépi ! Cras justo odio, dapibus ac facilisis in egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+                                Fusce dapibus tellus ac cursus commodo tortor mauris.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:block md:mt-8 lg:w-9/12 mx-auto">
+                    <p>L’Amusebus s’arrêtera chaque semaine dans un quartier différent de la commune pour investir les parcs et les préaux
+                        d’école du lundi au vendredi de 15h à 19h.</p>
+                </div>
             </div>
+
 
         </section>
 
         <footer class="bg-antistaville-gray-50 pt-8 px-4 pb-6">
             <!--Footer top-->
-            <div class="border-b-2 border-antistaville-gray-300 pb-6">
-                <div class="mb-8">
+            <div class="border-b-2 border-antistaville-gray-300 pb-8 sm:container sm:mx-auto sm:flex sm:flex-wrap sm:justify-center lg:justify-between">
+                <div class="navigation mb-8 sm:basis-2/4 sm:flex sm:flex-col sm:items-center lg:basis-1/3 lg:items-start">
                     <h4 class="footer-h4">Navigation</h4>
                     <ul class="list-none">
                         <li>
@@ -158,7 +185,7 @@
                     </ul>
                 </div>
 
-                <div class="mb-8">
+                <div class="useful-links mb-8 sm:basis-2/4 sm:flex sm:flex-col sm:items-center lg:basis-1/3 lg:items-start">
                     <h4 class="footer-h4">Liens utiles</h4>
                     <ul class="list-none">
                         <li>
@@ -179,15 +206,15 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-lg	p-4 h-60 flex flex-col justify-between">
+                <div class="bg-white rounded-lg	p-4 h-60 flex flex-col justify-between sm:max-w-sm sm:max-h-52 lg:basis-1/3">
                     <div>
                         <h4 class="font-bold text-2xl mb-2">Newsletter</h4>
                         <p>Inscrivez-vous pour rester au courant de la vie d’Antistaville.</p>
                     </div>
                     <div>
-                        <form class="flex flex-col items-start	">
-                            <input class="input smallest-text w-full" type="email" name="email" id="email" placeholder="Entrez votre email">
-                            <button class="bg-antistaville-green-anise-500 rounded-lg mt-2 p-2 font-bold text-base" type="submit">Je m’inscris</button>
+                        <form class="flex flex-col items-start sm:flex-row">
+                            <input class="input smallest-text w-full sm:mr-4" type="email" name="email" id="email" placeholder="Entrez votre email">
+                            <button class="btn-antistaville-green-anise-500 font-bold text-base mt-2 sm:min-w-max sm:mt-0" type="submit">Je m’inscris</button>
                         </form>
 
                     </div>
@@ -196,8 +223,8 @@
             </div>
 
             <!--Footer bottom-->
-            <div class="py-8 border-b-2 border-antistaville-gray-300">
-                <div class="mb-8">
+            <div class="py-8 border-b-2 border-antistaville-gray-300 sm:container sm:mx-auto sm:flex sm:flex-wrap sm:justify-center max-sm:flex max-sm:flex-col max-sm:items-center">
+                <div class="mb-8 sm:basis-1/3 xl:basis-1/4">
                     <h4 class="footer-h4">Adresse</h4>
                     <p>Mairie d’Antistaville<br>
                         Rue de l’Amour-du-Web<br>
@@ -205,7 +232,7 @@
                         1000 Antistaville</p>
                 </div>
 
-                <div class="mb-8">
+                <div class="mb-8 sm:basis-1/3 xl:basis-1/4">
                     <h4 class="footer-h4">Contact</h4>
                     <div class="flex flex-col items-start">
                         <button class="footer-btn-contact mb-2"><a href="tel:221234567">022 123 45 67</a></button>
@@ -213,11 +240,11 @@
                     </div>
                 </div>
 
-                <div class="mb-8">
+                <div class="mb-8 sm:basis-1/3 xl:basis-1/4">
                     <h4 class="footer-h4">Horaires du guichet</h4>
                     <div>
                         <div class="flex">
-                            <div class="flex flex-col w-36">
+                            <div class="flex flex-col w-24">
                                 <span>Lundi</span>
                                 <span>Mardi</span>
                                 <span>Mercredi</span>
@@ -237,8 +264,8 @@
 
                 </div>
 
-                <div>
-                    <h4 class="footer-h4 mb-6">Réseaux sociaux</h4>
+                <div class="social-network transition-transform xl:basis-1/4">
+                    <h4 class="footer-h4 mb-6 sm:text-center xl:text-start">Réseaux sociaux</h4>
                     <div class="flex">
                         <a href="#">
                             <img class="mx-3" src="img/facebook.png" alt="Logo de Facebook">
@@ -258,17 +285,17 @@
             </div>
 
             <!--Legal notice-->
-            <div class="flex flex-wrap py-6">
+            <div class="legal-notice flex flex-wrap py-6 sm:container sm:mx-auto sm:justify-between">
                 <div class="flex flex-wrap mb-2">
-                    <p class="smallest-text mb-2">Copyright © 2022 Antistaville</p>
-                    <p class="smallest-text border-b-2 border-antistaville-gray-300 mr-4">
-                        <a href="#">Protections des données</a>
+                    <p class="smallest-text mb-2 mr-4">Copyright © 2022 Antistaville</p>
+                    <p class="smallest-text mr-4">
+                        <a class="border-b-2 border-antistaville-gray-300" href="#">Protections des données</a>
                     </p>
-                    <p class="smallest-text border-b-2 border-antistaville-gray-300 mr-4">
-                        <a href="#">Plan du site</a>
+                    <p class="smallest-text mr-4">
+                        <a class="border-b-2 border-antistaville-gray-300" href="#">Plan du site</a>
                     </p>
-                    <p class="smallest-text border-b-2 border-antistaville-gray-300 mr-4">
-                        <a href="#">Lexique</a>
+                    <p class="smallest-text mr-4">
+                        <a class="border-b-2 border-antistaville-gray-300" href="#">Lexique</a>
                     </p>
                 </div>
                 <div>

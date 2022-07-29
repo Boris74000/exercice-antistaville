@@ -239,6 +239,7 @@ module.exports = {
     container: {},
     content: {
       none: 'none',
+      arrow: 'url("./img/angle-down-solid.svg")',
     },
     cursor: {
       auto: 'auto',

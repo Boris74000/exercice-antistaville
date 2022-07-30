@@ -93,11 +93,11 @@
 
     /* ------------ Search bar ---------------*/
     .hidden-search-block {
-        @apply top-20 -right-72 lg:top-24;
+        @apply -top-24 right-0;
     }
 
     .display-search-block {
-        @apply top-20 right-5 lg:top-24;
+        @apply top-1/2 -translate-y-1/2	 right-0;
     }
     /*------------------------------------*/
 

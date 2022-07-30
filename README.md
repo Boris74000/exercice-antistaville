@@ -1,5 +1,13 @@
 # Exercice Antistaville
 
+## Consigne
+Intégrer une maquette Figma en utilisant obligatoirement Tailwind CSS.
+
+Aperçu du site 
+![Screenshot de l'application](public/img/exercice-antistaville.cb-dauvier.fr.png)
+
+Voir le résultat en [ligne](https://exercice-antistaville.cb-dauvier.fr/)
+
 ## Estimation et décompte du temps
 * Estimation Pour la réalisation du projet => 20h
 * Temps réel passé après 1er commit => [TrackingTime](https://pro.trackingtime.co/doc/?token=vt1yry8m7kx4xmbin1fgapjan1wfg0vpy58bxuz0nurue2rfdo0xxxf0g2myorq4)

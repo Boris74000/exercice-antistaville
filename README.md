@@ -6,7 +6,6 @@ Intégrer une maquette Figma en utilisant obligatoirement Tailwind CSS.
 Aperçu du site 
 ![Screenshot de l'application](public/img/exercice-antistaville.cb-dauvier.fr.png)
 
-Voir le résultat en [ligne](https://exercice-antistaville.cb-dauvier.fr/)
 
 ## Estimation et décompte du temps
 * Estimation Pour la réalisation du projet => 20h

@@ -1,28 +1,27 @@
-# Exercice Antistaville
+# Exercise Antistaville
 
-## Consigne
-Intégrer une maquette Figma en utilisant obligatoirement Tailwind CSS.
+## Guidelines
+Figma to HTML with Tailwind CSS.
 
-Aperçu du site 
+Overview of the website
 ![Screenshot de l'application](public/img/exercice-antistaville.cb-dauvier.fr.png)
 
 Voir le résultat en [ligne](https://exercice-antistaville.cb-dauvier.fr/)
 
-## Estimation et décompte du temps
-* Estimation Pour la réalisation du projet => 20h
-* Temps réel passé après 1er commit => [TrackingTime](https://pro.trackingtime.co/doc/?token=vt1yry8m7kx4xmbin1fgapjan1wfg0vpy58bxuz0nurue2rfdo0xxxf0g2myorq4)
-* Temps réel passé à la réalisation du projet  => 16h
+## Time estimation and counting
+* Estimated cost for the project => 20h
+* Real time spent on the project  => 16h
 
-## Récupération du projet
+## Get the project
 
-* Vous pouvez récupérer l'application en utilisant Git avec la commande ```git clone https://github.com/Boris74000/exercice-antistaville.git``` ou en téléchageant le [zip](https://github.com/Boris74000/exercice-antistaville/archive/refs/heads/main.zip)
+* You can get the application with git command ```git clone https://github.com/Boris74000/exercice-antistaville.git``` or by downloading [zip](https://github.com/Boris74000/exercice-antistaville/archive/refs/heads/main.zip)
 
-## Installation de l'application
+## Install application
 
-- Téléchargez et installer [Node.js](https://nodejs.org/fr/download/ "download node.js").
-- Vérifiez que Node.js est bien installé en exécutant dans la console ```node -v ```.
-- À la racine du projet téléchargé et dézippé, lancez la commande ``npm install`` pour installer les dépendances.
-- Glisser-déposer le fichier Html dans le navigateur.
+- Download and install [Node.js](https://nodejs.org/fr/download/ "download node.js").
+- Check that Node.js is installed with this command line ```node -v ```.
+- At the root of the downloaded and unzipped project, use this command ``npm install`` to install the dependencies.
+- Open the index.html file inside public directory with your browser.
 
 ## Technologies
 

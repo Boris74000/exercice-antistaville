@@ -6,7 +6,6 @@ Figma to HTML with Tailwind CSS.
 Overview of the website
 ![Screenshot de l'application](public/img/exercice-antistaville.cb-dauvier.fr.png)
 
-Voir le résultat en [ligne](https://exercice-antistaville.cb-dauvier.fr/)
 
 ## Time estimation and counting
 * Estimated cost for the project => 20h
